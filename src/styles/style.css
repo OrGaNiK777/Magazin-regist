@@ -1,14 +1,22 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
 	box-sizing: border-box;
 	min-width: 320px;
 	font-family: 'Roboto', sans-serif;
-	background-color: var(--bs-gray-400);
 }
 
 .wrapper {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+}
+
+main.main {
+	flex: 1 1 auto;
 }
 
 a {
@@ -20,6 +28,10 @@ a {
 i {
 	font-size: 2em;
 	color: var(--bs-purple);
+}
+
+.header {
+	background-color: var(--bs-gray-400);
 }
 
 .row {
@@ -40,10 +52,6 @@ i {
 
 .btn:hover {
 	background-color: var(--bs-gray-500);
-}
-
-main.main {
-	flex: 1 1 auto;
 }
 
 .header_logo {
@@ -72,7 +80,7 @@ ul.contact_icons {
 	justify-content: center;
 }
 
-.group{
+.group {
 	display: flex;
 	justify-content: end;
 }
