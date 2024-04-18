@@ -15,35 +15,31 @@ a {
 	margin-right: 5px;
 	text-decoration: none;
 	color: var(--bs-purple);
+	transition: all 0.3s;
 }
 
-i {
-	font-size: 2em;
-	color: var(--bs-purple);
+a:hover {
+	color: var(--bs-blue);
 }
 
 .row {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	flex-wrap: nowrap;
 }
 
 .btn {
-	background: none;
-	border: none;
+	transition: all 0.3s;
 	color: var(--bs-purple);
 }
 
-.btn.show {
-	background-color: var(--bs-gray-500);
-}
-
 .btn:hover {
-	background-color: var(--bs-gray-500);
+	color: var(--bs-blue);
 }
 
 main.main {
 	flex: 1 1 auto;
+	background-color: aliceblue;
 }
 
 .header_logo {
@@ -55,13 +51,18 @@ main.main {
 .header_logo_text {
 	font-family: 'Poiret One', sans-serif;
 	font-weight: 900;
-	font-size: 36px;
+	font-size: 32px;
 	min-width: 270px;
+	margin: 0;
 }
 
 .header-contact {
 	display: flex;
 	flex-direction: row;
+}
+
+li {
+	height: auto;
 }
 
 ul.contact_icons {
@@ -70,9 +71,27 @@ ul.contact_icons {
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	height: 28px;
 }
 
-.group{
+.group {
 	display: flex;
 	justify-content: end;
+}
+
+.input-search {
+	background-color: var(--bs-gray-400);
+	transition: all 0.3s;
+	border: none;
+}
+
+.input-search:focus {
+	box-shadow: none;
+	background-color: var(--bs-gray-400);
+}
+
+.badge {
+	font-size: 0.4rem;
 }
