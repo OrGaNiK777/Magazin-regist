@@ -9,16 +9,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-main.main {
-	flex: 1 1 auto;
-}
-
 a {
 	margin-right: 5px;
 	text-decoration: none;
@@ -41,10 +31,6 @@ a:hover {
 
 .btn:hover {
 	color: var(--bs-blue);
-}
-
-main.main {
-	flex: 1 1 auto;
 }
 
 .header {
@@ -105,6 +91,7 @@ ul.contact_icons {
 .card {
 	border-radius: 0;
 	border: none;
+	
 }
 
 .card-img-top {
